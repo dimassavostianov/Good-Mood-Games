@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Tools.Collision
+namespace Tools.Collision
 {
     public class DestroyOnCollision : MonoBehaviour
     {

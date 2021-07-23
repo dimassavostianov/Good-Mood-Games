@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Tools.Log
+namespace Tools.Log
 {
     public enum LogChannel
     {

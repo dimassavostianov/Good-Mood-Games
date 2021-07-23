@@ -1,4 +1,4 @@
-﻿namespace GoodMoodGames.Scripts.Patterns.Pool.Interfaces
+﻿namespace Patterns.Pool.Interfaces
 {
     public interface IObjectPool<T> where T : PoolableObject
     {

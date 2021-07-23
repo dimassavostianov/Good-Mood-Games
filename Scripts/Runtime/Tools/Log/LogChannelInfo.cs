@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Tools.Log
+namespace Tools.Log
 {
     [Serializable]
     public sealed class LogChannelInfo

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Tools.Log
+namespace Tools.Log
 {
     public sealed class MonoLogSettings : ScriptableObject
     {

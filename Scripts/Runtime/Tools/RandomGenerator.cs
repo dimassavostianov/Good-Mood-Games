@@ -1,4 +1,4 @@
-﻿namespace GoodMoodGames.Scripts.Tools
+﻿namespace Tools
 {
     public static class RandomGenerator
     {

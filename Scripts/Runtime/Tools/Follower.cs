@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Tools
+namespace Tools
 {
     public class Follower : MonoBehaviour
     {

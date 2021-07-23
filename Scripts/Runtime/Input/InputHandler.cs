@@ -1,4 +1,4 @@
-﻿namespace GoodMoodGames.Scripts.Input
+﻿namespace Input
 {
     public static class InputHandler
     {

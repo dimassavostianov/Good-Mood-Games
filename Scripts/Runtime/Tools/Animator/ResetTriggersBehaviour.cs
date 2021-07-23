@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Tools.Animator
+namespace Tools.Animator
 {
     public class ResetTriggersBehaviour : StateMachineBehaviour
     {

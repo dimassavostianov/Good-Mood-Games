@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using GoodMoodGames.Scripts.Patterns.Pool.Interfaces;
+using Patterns.Pool.Interfaces;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Patterns.Pool
+namespace Patterns.Pool
 {
     public class ObjectPool<T> : IObjectPool<T> where T : PoolableObject
     {

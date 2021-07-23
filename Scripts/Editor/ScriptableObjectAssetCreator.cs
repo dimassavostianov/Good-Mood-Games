@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Editor
+namespace Editor
 {
     public static class ScriptableObjectAssetCreator
     {

@@ -1,0 +1,13 @@
+{
+  "name": "com.goodmoodgames.tools",
+  "version": "1.0.0",
+  "displayName": "Good Mood Games",
+  "description": "This package contains tools that facilitate game development with Unity",
+  "unity": "2020.1",
+  "unityRelease": "7f1",
+  "author": {
+    "name": "Good Mood Games",
+    "email": "dimassavostianov.gamedev@gmail.com"
+  },
+  "type" : "tool"
+}

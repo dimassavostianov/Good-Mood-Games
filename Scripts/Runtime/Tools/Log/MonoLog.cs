@@ -12,7 +12,7 @@ namespace Tools.Log
     
     public static class MonoLog
     {
-        private const string MonoLogSettingsAssetPath = "Assets/GoodMoodGames/Data/MonoLogSettings.asset";
+        private const string MonoLogSettingsAssetPath = "Packages/com.goodmoodgames.tools/Data/MonoLogSettings.asset";
         private static MonoLogSettings LogSettings { get; set; }
 
         [RuntimeInitializeOnLoadMethod]

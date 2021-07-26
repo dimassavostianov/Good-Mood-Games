@@ -2,7 +2,7 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Runtime.Scripts.Tools
+namespace Scripts.Runtime.Tools
 {
     public class Mover : MonoBehaviour
     {

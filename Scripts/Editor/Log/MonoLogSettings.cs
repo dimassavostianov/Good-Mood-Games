@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Runtime.Scripts.Tools.Log
+namespace Scripts.Editor.Log
 {
     public sealed class MonoLogSettings : ScriptableObject
     {

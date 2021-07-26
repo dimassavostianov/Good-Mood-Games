@@ -1,4 +1,4 @@
-﻿namespace Runtime.Scripts.Tools
+﻿namespace Scripts.Runtime.Tools
 {
     public static class RandomGenerator
     {

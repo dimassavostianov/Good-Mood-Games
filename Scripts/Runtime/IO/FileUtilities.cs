@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Runtime.Scripts.IO
+namespace Scripts.Runtime.IO
 {
     public static class FileUtilities
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Runtime.Scripts.Tools
+namespace Scripts.Runtime.Tools
 {
     public class SpriteAnimator : MonoBehaviour
     {

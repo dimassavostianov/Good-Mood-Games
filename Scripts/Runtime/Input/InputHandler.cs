@@ -1,4 +1,4 @@
-﻿namespace Runtime.Scripts.Input
+﻿namespace Scripts.Runtime.Input
 {
     public static class InputHandler
     {

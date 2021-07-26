@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Runtime.Scripts.Tools.Rotation
+namespace Scripts.Runtime.Tools.Rotation
 {
     [ExecuteInEditMode]
     public class RotationSetter : MonoBehaviour

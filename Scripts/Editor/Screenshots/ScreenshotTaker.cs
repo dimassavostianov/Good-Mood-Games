@@ -4,7 +4,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace Editor.Scripts
+namespace Scripts.Editor.Screenshots
 {
     internal static class ScreenshotTaker
     {

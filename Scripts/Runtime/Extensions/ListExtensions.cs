@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Runtime.Scripts.Extensions
+namespace Scripts.Runtime.Extensions
 {
     public static class ListExtensions
     {

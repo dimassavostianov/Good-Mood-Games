@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Runtime.Scripts.Patterns.Pool
+namespace Scripts.Runtime.Patterns.Pool
 {
     public class PoolableObject : MonoBehaviour
     {

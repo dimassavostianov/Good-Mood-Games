@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace Runtime.Scripts.Tools.Log
+namespace Scripts.Editor.Log
 {
     public enum LogChannel
     {

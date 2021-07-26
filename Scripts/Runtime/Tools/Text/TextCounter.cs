@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace Runtime.Scripts.Tools.Text
+namespace Scripts.Runtime.Tools.Text
 {
     public class TextCounter : MonoBehaviour
     {

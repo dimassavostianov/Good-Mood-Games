@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace Editor.Scripts
+namespace Scripts.Editor.ScriptableObjects
 {
     public static class ScriptableObjectAssetCreator
     {

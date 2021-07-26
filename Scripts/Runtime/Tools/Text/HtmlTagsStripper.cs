@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Runtime.Scripts.Tools.Text
+namespace Scripts.Runtime.Tools.Text
 {
     public static class HtmlTagsStripper
     {

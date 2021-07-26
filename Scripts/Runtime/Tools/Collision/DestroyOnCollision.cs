@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Runtime.Scripts.Tools.Collision
+namespace Scripts.Runtime.Tools.Collision
 {
     public class DestroyOnCollision : MonoBehaviour
     {

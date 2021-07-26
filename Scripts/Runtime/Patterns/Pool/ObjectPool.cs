@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Runtime.Scripts.Patterns.Pool.Interfaces;
+using Scripts.Runtime.Patterns.Pool.Interfaces;
 using UnityEngine;
 
-namespace Runtime.Scripts.Patterns.Pool
+namespace Scripts.Runtime.Patterns.Pool
 {
     public class ObjectPool<T> : IObjectPool<T> where T : PoolableObject
     {

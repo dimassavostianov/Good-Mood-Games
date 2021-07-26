@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace Scripts.Editor.Log
+namespace Scripts.Runtime.Log
 {
     public enum LogChannel
     {
@@ -12,16 +12,11 @@ namespace Scripts.Editor.Log
     
     public static class MonoLog
     {
-        private const string MonoLogSettingsAssetPath = "Packages/com.goodmoodgames.tools/Data/MonoLogSettings.asset";
         private static MonoLogSettings LogSettings { get; set; }
 
-        [RuntimeInitializeOnLoadMethod]
-        public static void DefineLogSettings()
+        public static void InjectLogSettings(MonoLogSettings monoLogSettings)
         {
-            var monoLogSettings = AssetDatabase.LoadAssetAtPath<MonoLogSettings>(MonoLogSettingsAssetPath);
             LogSettings = monoLogSettings;
-            
-            Debug.unityLogger.logEnabled = monoLogSettings.DebugLogsEnabled;
         }
 
         #region Log Functions

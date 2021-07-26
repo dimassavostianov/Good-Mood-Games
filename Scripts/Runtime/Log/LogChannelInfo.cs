@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Scripts.Editor.Log
+namespace Scripts.Runtime.Log
 {
     [Serializable]
     public sealed class LogChannelInfo

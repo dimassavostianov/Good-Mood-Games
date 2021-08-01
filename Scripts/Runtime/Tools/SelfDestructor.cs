@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Scripts.Runtime.Tools
+namespace GoodMoodGames.Scripts.Runtime.Tools
 {
     public class SelfDestructor : MonoBehaviour
     {

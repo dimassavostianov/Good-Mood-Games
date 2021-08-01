@@ -1,34 +1,41 @@
-﻿using TMPro;
+﻿using System.Globalization;
+using DG.Tweening;
+using GoodMoodGames.Scripts.Runtime.Tools.Text.Domain;
+using TMPro;
 using UnityEngine;
 
-namespace Scripts.Runtime.Tools.Text
+namespace GoodMoodGames.Scripts.Runtime.Tools.Text
 {
     public class TextCounter : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _text;
-        [SerializeField] private Animation _onCounterUpdateAnimation;
-        
-        public int Count { get; private set; }
 
-        public void SetCounter(int value)
+        [Space] [SerializeField] private TextCounterTweenData _tweenData;
+
+        private int Count { get; set; }
+
+        public Tween SetCounter(int value)
         {
             Count = value;
-            SetText();
+            return SetText();
         }
-        
-        public void ResetCounter(int value = 1)
+
+        public Tween ResetCounter(int value = 1)
         {
             Count += value;
-            SetText();
+            return SetText();
         }
 
-        private void SetText()
+        private Tween SetText()
         {
-            _text.text = Count.ToString();
+            var countSequence = DOTween.Sequence();
+            var currentCount = int.Parse(_text.text);
 
-            if (!_onCounterUpdateAnimation) return;
-            if (!_onCounterUpdateAnimation.isPlaying)
-                _onCounterUpdateAnimation.Play();
+            countSequence.Append(DOTween
+                .To(count => _text.text = Mathf.CeilToInt(count).ToString(CultureInfo.InvariantCulture),
+                    currentCount, Count, _tweenData.CountDuration).SetEase(_tweenData.CountCurve));
+
+            return countSequence;
         }
     }
 }

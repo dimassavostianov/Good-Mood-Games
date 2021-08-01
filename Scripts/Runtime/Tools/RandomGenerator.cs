@@ -1,4 +1,4 @@
-﻿namespace Scripts.Runtime.Tools
+﻿namespace GoodMoodGames.Scripts.Runtime.Tools
 {
     public static class RandomGenerator
     {

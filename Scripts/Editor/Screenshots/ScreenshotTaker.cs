@@ -4,7 +4,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace Scripts.Editor.Screenshots
+namespace GoodMoodGames.Scripts.Editor.Screenshots
 {
     internal static class ScreenshotTaker
     {

@@ -1,8 +1,7 @@
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-namespace Scripts.Runtime.Log
+namespace GoodMoodGames.Scripts.Runtime.Log
 {
     public enum LogChannel
     {

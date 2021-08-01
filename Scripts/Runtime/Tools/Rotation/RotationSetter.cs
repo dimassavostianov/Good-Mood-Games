@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Scripts.Runtime.Tools.Rotation
+namespace GoodMoodGames.Scripts.Runtime.Tools.Rotation
 {
     [ExecuteInEditMode]
     public class RotationSetter : MonoBehaviour

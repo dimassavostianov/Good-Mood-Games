@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Scripts.Runtime.Tools.Text
+namespace GoodMoodGames.Scripts.Runtime.Tools.Text
 {
     public static class HtmlTagsStripper
     {

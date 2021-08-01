@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Scripts.Runtime.Extensions
+namespace GoodMoodGames.Scripts.Runtime.Extensions
 {
     public static class ListExtensions
     {

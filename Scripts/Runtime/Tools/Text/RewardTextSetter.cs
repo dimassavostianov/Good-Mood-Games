@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace Scripts.Runtime.Tools.Text
+namespace GoodMoodGames.Scripts.Runtime.Tools.Text
 {
     public class RewardTextSetter : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Scripts.Runtime.IO
+namespace GoodMoodGames.Scripts.Runtime.IO
 {
     public static class FileUtilities
     {

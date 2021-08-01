@@ -1,8 +1,8 @@
-using Scripts.Runtime.Log;
+using GoodMoodGames.Scripts.Runtime.Log;
 using UnityEditor;
 using UnityEngine;
 
-namespace Scripts.Editor.Log
+namespace GoodMoodGames.Scripts.Editor.Log
 {
     public static class MonoLogSettingsDefiner
     {

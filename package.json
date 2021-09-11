@@ -1,6 +1,6 @@
 {
   "name": "com.goodmoodgames.tools",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "displayName": "Good Mood Games",
   "description": "This package contains tools that facilitate game development with Unity",
   "unity": "2020.1",

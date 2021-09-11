@@ -1,0 +1,17 @@
+{
+    "name": "Unity.com.goodmoodgames.tools.Managers",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:9fb2b3630cf2d494c8a5f47c37ac88d7",
+        "GUID:23dd278f3647a44d984f7184aabddc07"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

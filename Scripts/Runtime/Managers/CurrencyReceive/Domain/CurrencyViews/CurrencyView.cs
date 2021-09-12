@@ -1,9 +1,9 @@
 using System;
 using DG.Tweening;
-using GoodMoodGames.Scripts.Runtime.Patterns.Pool;
+using Scripts.Runtime.Patterns.Pool;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViews
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViews
 {
     public abstract class CurrencyView : PoolableObject
     {

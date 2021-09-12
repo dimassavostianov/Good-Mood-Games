@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViewParticles
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViewParticles
 {
     public abstract class CurrencyViewParticle : MonoBehaviour
     {

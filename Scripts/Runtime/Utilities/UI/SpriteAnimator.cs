@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Utilities.UI
+namespace Scripts.Runtime.Utilities.UI
 {
     public class SpriteAnimator : MonoBehaviour
     {

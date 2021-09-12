@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GoodMoodGames.Scripts.Runtime.Utilities.UI.DynamicUI
+namespace Scripts.Runtime.Utilities.UI.DynamicUI
 {
     public sealed class DynamicUIImage : DynamicUIObject
     {

@@ -1,8 +1,8 @@
 using DG.Tweening;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData.CurrencyCounterView;
+using Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData.CurrencyCounterView;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyCounterViewAnimators
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyCounterViewAnimators
 {
     public abstract class CurrencyCounterViewAnimator : MonoBehaviour
     {

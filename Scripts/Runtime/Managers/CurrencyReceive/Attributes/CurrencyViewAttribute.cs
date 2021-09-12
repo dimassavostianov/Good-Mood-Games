@@ -1,7 +1,7 @@
 using System;
-using GoodMoodGames.Scripts.Runtime.Currencies.Enums;
+using Scripts.Runtime.Currencies.Enums;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Attributes
+namespace Scripts.Runtime.Managers.CurrencyReceive.Attributes
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
     public sealed class CurrencyViewAttribute : Attribute

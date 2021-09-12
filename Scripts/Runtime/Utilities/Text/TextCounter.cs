@@ -1,10 +1,10 @@
 ﻿using System.Globalization;
 using DG.Tweening;
-using GoodMoodGames.Scripts.Runtime.Utilities.Text.Domain.TweenData;
+using Scripts.Runtime.Utilities.Text.Domain.TweenData;
 using TMPro;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Utilities.Text
+namespace Scripts.Runtime.Utilities.Text
 {
     public class TextCounter : MonoBehaviour
     {

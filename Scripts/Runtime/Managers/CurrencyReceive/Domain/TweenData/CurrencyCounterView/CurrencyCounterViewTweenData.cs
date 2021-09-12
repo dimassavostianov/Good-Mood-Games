@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData.CurrencyCounterView
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData.CurrencyCounterView
 {
     public abstract class CurrencyCounterViewTweenData : ScriptableObject
     {

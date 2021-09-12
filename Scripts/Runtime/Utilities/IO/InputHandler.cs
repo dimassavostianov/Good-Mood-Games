@@ -1,4 +1,4 @@
-﻿namespace GoodMoodGames.Scripts.Runtime.Utilities.IO
+﻿namespace Scripts.Runtime.Utilities.IO
 {
     public static class InputHandler
     {

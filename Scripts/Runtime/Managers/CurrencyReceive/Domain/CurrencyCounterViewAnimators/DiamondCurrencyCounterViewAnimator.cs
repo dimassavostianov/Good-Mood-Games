@@ -2,7 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyCounterViewAnimators
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyCounterViewAnimators
 {
     public class DiamondCurrencyCounterViewAnimator : CurrencyCounterViewAnimator
     {

@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
-using GoodMoodGames.Scripts.Runtime.Managers.Audio;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViewParticles;
+using Scripts.Runtime.Managers.Audio;
+using Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViewParticles;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViews
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViews
 {
     public sealed class DiamondCurrencyView : CurrencyView
     {

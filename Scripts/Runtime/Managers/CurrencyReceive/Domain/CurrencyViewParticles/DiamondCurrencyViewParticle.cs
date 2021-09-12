@@ -1,9 +1,9 @@
 using DG.Tweening;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData.CurrencyViewParticle;
+using Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData.CurrencyViewParticle;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViewParticles
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViewParticles
 {
     public class DiamondCurrencyViewParticle : CurrencyViewParticle
     {

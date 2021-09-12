@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Patterns.Singleton
+namespace Scripts.Runtime.Patterns.Singleton
 {
     public class MonoBehaviourSingleton<T> : MonoBehaviour where T : MonoBehaviour
     {

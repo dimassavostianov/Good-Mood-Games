@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Utilities
+namespace Scripts.Runtime.Utilities
 {
     [ExecuteInEditMode]
     public class DistanceSetter : MonoBehaviour

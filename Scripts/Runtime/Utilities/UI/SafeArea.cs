@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Utilities.UI
+namespace Scripts.Runtime.Utilities.UI
 {
     public class SafeArea : MonoBehaviour
     {

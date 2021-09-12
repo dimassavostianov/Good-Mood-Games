@@ -1,9 +1,9 @@
 #if UNITY_ANDROID
 
-using GoodMoodGames.Scripts.Runtime.Managers.Vibration.Interfaces;
+using Scripts.Runtime.Managers.Vibration.Interfaces;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.Vibration.Implementers
+namespace Scripts.Runtime.Managers.Vibration.Implementers
 {
     public class AndroidVibrationImplementer : VibrationImplementer
     {

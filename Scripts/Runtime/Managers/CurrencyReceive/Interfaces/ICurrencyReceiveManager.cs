@@ -1,10 +1,10 @@
 using DG.Tweening;
-using GoodMoodGames.Scripts.Runtime.Currencies.Enums;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Delegates;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain;
+using Scripts.Runtime.Currencies.Enums;
+using Scripts.Runtime.Managers.CurrencyReceive.Delegates;
+using Scripts.Runtime.Managers.CurrencyReceive.Domain;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Interfaces
+namespace Scripts.Runtime.Managers.CurrencyReceive.Interfaces
 {
     public interface ICurrencyReceiveManager
     {

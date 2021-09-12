@@ -1,4 +1,4 @@
-namespace GoodMoodGames.Scripts.Runtime.Currencies.Enums
+namespace Scripts.Runtime.Currencies.Enums
 {
     public enum CurrencyType
     {

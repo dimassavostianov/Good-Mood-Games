@@ -1,7 +1,7 @@
-﻿using GoodMoodGames.Scripts.Runtime.Patterns.Singleton;
+﻿using Scripts.Runtime.Patterns.Singleton;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.Audio
+namespace Scripts.Runtime.Managers.Audio
 {
     public sealed class AudioManager : MonoBehaviourSingleton<AudioManager>
     {

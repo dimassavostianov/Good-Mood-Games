@@ -1,4 +1,4 @@
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Enums
+namespace Scripts.Runtime.Managers.CurrencyReceive.Enums
 {
     public enum CurrencyCounterViewChangeType
     {

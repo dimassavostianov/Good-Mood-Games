@@ -2,18 +2,18 @@
 using System.Linq;
 using System.Reflection;
 using DG.Tweening;
-using GoodMoodGames.Scripts.Runtime.Currencies.Enums;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Attributes;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Delegates;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViews;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Interfaces;
-using GoodMoodGames.Scripts.Runtime.Patterns.Pool;
-using GoodMoodGames.Scripts.Runtime.Patterns.Singleton;
+using Scripts.Runtime.Currencies.Enums;
+using Scripts.Runtime.Managers.CurrencyReceive.Attributes;
+using Scripts.Runtime.Managers.CurrencyReceive.Delegates;
+using Scripts.Runtime.Managers.CurrencyReceive.Domain;
+using Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyViews;
+using Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData;
+using Scripts.Runtime.Managers.CurrencyReceive.Interfaces;
+using Scripts.Runtime.Patterns.Pool;
+using Scripts.Runtime.Patterns.Singleton;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive
+namespace Scripts.Runtime.Managers.CurrencyReceive
 {
     public class CurrencyReceiveManager : MonoBehaviourSingleton<CurrencyReceiveManager>, ICurrencyReceiveManager
     {

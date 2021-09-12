@@ -1,6 +1,6 @@
 using System;
 
-namespace GoodMoodGames.Scripts.Runtime.Utilities.Storage.Interfaces
+namespace Scripts.Runtime.Utilities.Storage.Interfaces
 {
     public interface IData
     {

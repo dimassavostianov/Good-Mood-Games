@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Utilities.Text.Domain.TweenData
+namespace Scripts.Runtime.Utilities.Text.Domain.TweenData
 {
     public class TextCounterTweenData : ScriptableObject
     {

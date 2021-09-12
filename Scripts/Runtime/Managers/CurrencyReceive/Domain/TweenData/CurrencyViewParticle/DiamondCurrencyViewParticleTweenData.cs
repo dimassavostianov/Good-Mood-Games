@@ -1,4 +1,4 @@
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData.CurrencyViewParticle
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData.CurrencyViewParticle
 {
     public sealed class DiamondCurrencyViewParticleTweenData : CurrencyViewParticleTweenData
     {

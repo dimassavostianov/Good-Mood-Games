@@ -1,12 +1,12 @@
 using DG.Tweening;
-using GoodMoodGames.Scripts.Runtime.Currencies.Enums;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyCounterViewAnimators;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Enums;
-using GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Interfaces;
+using Scripts.Runtime.Currencies.Enums;
+using Scripts.Runtime.Managers.CurrencyReceive.Domain.CurrencyCounterViewAnimators;
+using Scripts.Runtime.Managers.CurrencyReceive.Enums;
+using Scripts.Runtime.Managers.CurrencyReceive.Interfaces;
 using TMPro;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain
 {
     public sealed class CurrencyCounterView : MonoBehaviour
     {

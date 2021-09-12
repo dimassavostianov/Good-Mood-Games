@@ -1,11 +1,11 @@
-using GoodMoodGames.Scripts.Runtime.Managers.Vibration.Interfaces;
+using Scripts.Runtime.Managers.Vibration.Implementers;
+using Scripts.Runtime.Managers.Vibration.Interfaces;
 using UnityEngine;
-
 #if UNITY_IOS || UNITY_ANDROID
-using GoodMoodGames.Scripts.Runtime.Managers.Vibration.Implementers;
+
 #endif
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.Vibration
+namespace Scripts.Runtime.Managers.Vibration
 {
     public static class VibrationManager
     {

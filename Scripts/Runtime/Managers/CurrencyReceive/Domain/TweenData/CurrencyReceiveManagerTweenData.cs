@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData
+namespace Scripts.Runtime.Managers.CurrencyReceive.Domain.TweenData
 {
     public sealed class CurrencyReceiveManagerTweenData : ScriptableObject
     {

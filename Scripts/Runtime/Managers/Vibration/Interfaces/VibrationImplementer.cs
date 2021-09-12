@@ -1,4 +1,4 @@
-namespace GoodMoodGames.Scripts.Runtime.Managers.Vibration.Interfaces
+namespace Scripts.Runtime.Managers.Vibration.Interfaces
 {
     public abstract class VibrationImplementer
     {

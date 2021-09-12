@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace GoodMoodGames.Scripts.Runtime.Utilities.Rotation
+namespace Scripts.Runtime.Utilities.Rotation
 {
     public class Rotator : MonoBehaviour
     {

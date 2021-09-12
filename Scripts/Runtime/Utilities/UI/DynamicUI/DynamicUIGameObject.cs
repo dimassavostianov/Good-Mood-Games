@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace GoodMoodGames.Scripts.Runtime.Utilities.UI.DynamicUI
+namespace Scripts.Runtime.Utilities.UI.DynamicUI
 {
     public sealed class DynamicUIGameObject : DynamicUIObject
     {

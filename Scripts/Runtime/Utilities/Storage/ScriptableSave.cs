@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using Newtonsoft.Json;
-using Scripts.Runtime.Utilities.Log;
 using Scripts.Runtime.Utilities.Storage.Interfaces;
 using UnityEngine;
 
@@ -13,7 +12,6 @@ namespace Scripts.Runtime.Utilities.Storage
             {TypeNameHandling = TypeNameHandling.All};
 
         [SerializeField] protected TData Data;
-        [SerializeField] protected bool DebugLoad;
         [SerializeField] private bool _resetOnFirstLaunch = true;
 
         public static TInterface Instance { get; protected set; }
@@ -27,8 +25,6 @@ namespace Scripts.Runtime.Utilities.Storage
 
         public override void Load()
         {
-            MonoLog.Log($"Trying to load data: {name}");
-
             if (Data != null) Data.Changed -= Save;
 
             var path = $"{Application.persistentDataPath}/{name}";
@@ -50,7 +46,6 @@ namespace Scripts.Runtime.Utilities.Storage
         public void Delete()
         {
             var path = $"{Application.persistentDataPath}/{name}";
-            if (DebugLoad) MonoLog.Log($"Deleted {name} {path}");
             if (File.Exists(path)) File.Delete(path);
         }
 

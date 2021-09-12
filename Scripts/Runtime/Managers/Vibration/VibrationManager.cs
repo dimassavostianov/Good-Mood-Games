@@ -1,9 +1,5 @@
 using Scripts.Runtime.Managers.Vibration.Implementers;
-using Scripts.Runtime.Managers.Vibration.Interfaces;
 using UnityEngine;
-#if UNITY_IOS || UNITY_ANDROID
-
-#endif
 
 namespace Scripts.Runtime.Managers.Vibration
 {
@@ -21,27 +17,37 @@ namespace Scripts.Runtime.Managers.Vibration
         {
 #if UNITY_EDITOR
             return;
-#endif
-
-#if UNITY_IOS
+#elif UNITY_IOS
             Implementer = new IOSVibrationImplementer();
 #elif UNITY_ANDROID
             Implementer = new AndroidVibrationImplementer();
 #endif
 
-            HasVibrator = Implementer.CheckVibrator();
+            HasVibrator = Implementer.HasVibrator();
         }
 
         public static void Vibrate()
         {
-            if (!(VibrationsEnabled && HasVibrator)) return;
+            if (!VibrationsEnabled || !HasVibrator) return;
             Implementer.VibrateOnce();
+        }
+
+        public static void Vibrate(long duration)
+        {
+            if (!VibrationsEnabled || !HasVibrator) return;
+            Implementer.VibrateOnce(duration);
         }
 
         public static void VibrateWarning()
         {
-            if (!(VibrationsEnabled && HasVibrator)) return;
+            if (!VibrationsEnabled || !HasVibrator) return;
             Implementer.VibrateWarning();
+        }
+
+        public static void VibrateWarning(long duration, long delay)
+        {
+            if (!VibrationsEnabled || !HasVibrator) return;
+            Implementer.VibrateWarning(duration, delay);
         }
     }
 }

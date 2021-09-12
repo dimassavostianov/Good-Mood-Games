@@ -21,10 +21,11 @@
 + (void) vibrate:(long)defaultVibrationTime {
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
-+ (void) vibrateWarning:(long)defaultVibrationTime, (long)warningVibrationDelay {
-    for _ in 1...3 {
-        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
-        sleep(warningVibrationDelay)
++ (void) vibrateWarning:(long)defaultVibrationTime :(long)warningVibrationDelay {
+    for (int i = 0; i < 3; i++)
+    {
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+        sleep(warningVibrationDelay);
     }
 }
 
@@ -41,6 +42,6 @@ extern "C" {
         [Vibration vibrate:defaultVibrationTime];
     }
     void _VibrateWarning (long defaultVibrationTime, long warningVibrationDelay) {
-        [Vibration vibrateWarning:defaultVibrationTime, warningVibrationDelay];
+        [Vibration vibrateWarning:defaultVibrationTime :warningVibrationDelay];
     }
 }

@@ -1,30 +1,35 @@
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
 
-using Scripts.Runtime.Managers.Vibration.Interfaces;
 using UnityEngine;
 
 namespace Scripts.Runtime.Managers.Vibration.Implementers
 {
     public class AndroidVibrationImplementer : VibrationImplementer
     {
-        private static readonly AndroidJavaClass UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        private static readonly AndroidJavaObject CurrentActivity = UnityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-        private static readonly AndroidJavaObject Vibrator = CurrentActivity.Call<AndroidJavaObject>("getSystemService", "vibrator");
-        private static readonly AndroidJavaObject Context = CurrentActivity.Call<AndroidJavaObject>("getApplicationContext");
+        private static AndroidJavaObject _vibratorService;
 
-        private static readonly long[] WarningPattern =
+        public AndroidVibrationImplementer()
         {
-            DefaultVibrationTime, 
-            WarningVibrationDelay, 
-            DefaultVibrationTime,
-            WarningVibrationDelay,
-            DefaultVibrationTime
-        };
+            var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            var currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+            var context = currentActivity.Call<AndroidJavaObject>("getApplicationContext");
+            var contextClass = new AndroidJavaClass("android.content.Context");
+            var contextVibratorService = contextClass.GetStatic<string>("VIBRATOR_SERVICE");
+            
+            _vibratorService = context.Call<AndroidJavaObject>("getSystemService", contextVibratorService);
+        }
+        
+        public override bool HasVibrator() => _vibratorService.Call<bool>("hasVibrator");
 
-        public override bool CheckVibrator() => Vibrator.Call<bool>("hasVibrator");
+        public override void VibrateOnce(long duration = DefaultVibrationDuration) =>
+            _vibratorService.Call("vibrate", duration);
 
-        public override void VibrateOnce() => Vibrator.Call("vibrate", DefaultVibrationTime);
-        public override void VibrateWarning() => Vibrator.Call("vibrate", WarningPattern, -1); // -1 = do not repeat
+        public override void VibrateWarning(long duration = DefaultVibrationDuration,
+            long delay = WarningVibrationDelay)
+        {
+            var warningVibrationPattern = new [] { 0, duration, delay, duration, delay, duration };
+            _vibratorService.Call("vibrate", warningVibrationPattern, -1);
+        }
     }
 }
 

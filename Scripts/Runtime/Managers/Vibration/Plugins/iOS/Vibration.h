@@ -6,6 +6,6 @@
 
 + (BOOL) hasVibrator;
 + (void) vibrate:(long)defaultVibrationTime;
-+ (void) vibrateWarning:(long)defaultVibrationTime, (long)warningVibrationDelay;
++ (void) vibrateWarning:(long)defaultVibrationTime :(long)warningVibrationDelay;
 
 @end

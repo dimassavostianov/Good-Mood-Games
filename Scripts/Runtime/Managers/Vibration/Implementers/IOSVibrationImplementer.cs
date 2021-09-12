@@ -1,9 +1,8 @@
-#if UNITY_IOS
+#if UNITY_IOS && !UNITY_EDITOR
 
-using GoodMoodGames.Scripts.Runtime.Managers.Vibration.Interfaces;
 using System.Runtime.InteropServices;
 
-namespace GoodMoodGames.Scripts.Runtime.Managers.Vibration.Implementers
+namespace Scripts.Runtime.Managers.Vibration.Implementers
 {
     public class IOSVibrationImplementer : VibrationImplementer
     {
@@ -20,10 +19,11 @@ namespace GoodMoodGames.Scripts.Runtime.Managers.Vibration.Implementers
 
         #endregion
 
-        public override bool CheckVibrator() => _HasVibrator();
+        public override bool HasVibrator() => _HasVibrator();
         
-        public override void VibrateOnce() => _Vibrate(DefaultVibrationTime);
-        public override void VibrateWarning() => _VibrateWarning(DefaultVibrationTime, WarningVibrationDelay);
+        public override void VibrateOnce(long duration = DefaultVibrationDuration) => _Vibrate(duration);
+        public override void VibrateWarning(long duration = DefaultVibrationDuration,
+            long delay = WarningVibrationDelay) => _VibrateWarning(duration, delay);
     }
 }
 

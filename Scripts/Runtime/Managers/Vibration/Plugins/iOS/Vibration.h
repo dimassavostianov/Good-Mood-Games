@@ -5,7 +5,10 @@
 #pragma mark - Vibrate
 
 + (BOOL) hasVibrator;
-+ (void) vibrate:(long)defaultVibrationTime;
-+ (void) vibrateWarning:(long)defaultVibrationTime :(long)warningVibrationDelay;
+
++ (void) vibrateDefault;
++ (void) vibratePeek;
++ (void) vibratePop;
++ (void) vibrateWarning;
 
 @end

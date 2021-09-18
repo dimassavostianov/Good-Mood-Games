@@ -2,9 +2,9 @@
 
 using UnityEngine;
 
-namespace Scripts.Runtime.Managers.Vibration.Implementers
+namespace GoodMoodGames.Scripts.Runtime.Managers.Vibration.Implementers.Android
 {
-    public class AndroidVibrationImplementer : VibrationImplementer
+    public sealed class AndroidVibrationImplementer : VibrationImplementer
     {
         private static AndroidJavaObject _vibratorService;
 
@@ -21,13 +21,11 @@ namespace Scripts.Runtime.Managers.Vibration.Implementers
         
         public override bool HasVibrator() => _vibratorService.Call<bool>("hasVibrator");
 
-        public override void VibrateOnce(long duration = DefaultVibrationDuration) =>
-            _vibratorService.Call("vibrate", duration);
+        public void Vibrate(long duration) => _vibratorService.Call("vibrate", duration);
 
-        public override void VibrateWarning(long duration = DefaultVibrationDuration,
-            long delay = WarningVibrationDelay)
+        public void VibrateWarning(long duration, long delay)
         {
-            var warningVibrationPattern = new [] { 0, duration, delay, duration, delay, duration };
+            var warningVibrationPattern = new[] {0, duration, delay, duration, delay, duration};
             _vibratorService.Call("vibrate", warningVibrationPattern, -1);
         }
     }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Scripts.Runtime.Utilities
+namespace GoodMoodGames.Scripts.Runtime.Utilities
 {
     public static class PlayerPrefsExtension
     {

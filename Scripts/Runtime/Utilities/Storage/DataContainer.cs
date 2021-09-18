@@ -1,4 +1,4 @@
-namespace Scripts.Runtime.Utilities.Storage
+namespace GoodMoodGames.Scripts.Runtime.Utilities.Storage
 {
     public abstract class DataContainer
     {

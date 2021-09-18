@@ -1,9 +1,9 @@
 ﻿using System.IO;
+using GoodMoodGames.Scripts.Runtime.Utilities.Storage.Interfaces;
 using Newtonsoft.Json;
-using Scripts.Runtime.Utilities.Storage.Interfaces;
 using UnityEngine;
 
-namespace Scripts.Runtime.Utilities.Storage
+namespace GoodMoodGames.Scripts.Runtime.Utilities.Storage
 {
     public class ScriptableSave<TData, TInterface> : ScriptableSave
         where TData : DataContainer, TInterface, IData, new()

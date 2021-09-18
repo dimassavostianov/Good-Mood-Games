@@ -18,15 +18,18 @@
 + (BOOL) hasVibrator {
     return !(USING_IPAD);
 }
-+ (void) vibrate:(long)defaultVibrationTime {
+
++ (void) vibrateDefault: {
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
-+ (void) vibrateWarning:(long)defaultVibrationTime :(long)warningVibrationDelay {
-    for (int i = 0; i < 3; i++)
-    {
-        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-        sleep(warningVibrationDelay);
-    }
++ (void) vibratePeek: {
+    AudioServicesPlaySystemSound(1519);
+}
++ (void) vibratePop: {
+    AudioServicesPlaySystemSound(1520);
+}
++ (void) vibrateWarning: {
+    AudioServicesPlaySystemSound(1521);
 }
 
 @end
@@ -38,10 +41,17 @@ extern "C" {
     bool _HasVibrator () {
         return [Vibration hasVibrator];
     }
-    void _Vibrate (long defaultVibrationTime) {
-        [Vibration vibrate:defaultVibrationTime];
+
+    void _VibrateDefault () {
+        [Vibration vibrateDefault];
     }
-    void _VibrateWarning (long defaultVibrationTime, long warningVibrationDelay) {
-        [Vibration vibrateWarning:defaultVibrationTime :warningVibrationDelay];
+    void _VibratePeek () {
+        [Vibration vibratePeek];
+    }
+    void _VibratePop () {
+        [Vibration vibratePop];
+    }
+    void _VibrateWarning () {
+        [Vibration vibrateWarning];
     }
 }

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Scripts.Runtime.Utilities.UI
+namespace GoodMoodGames.Scripts.Runtime.Utilities.UI
 {
     public class LinkOpener : MonoBehaviour
     {

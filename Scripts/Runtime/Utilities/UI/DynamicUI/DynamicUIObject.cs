@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Scripts.Runtime.Utilities.UI.DynamicUI
+namespace GoodMoodGames.Scripts.Runtime.Utilities.UI.DynamicUI
 {
     public abstract class DynamicUIObject : MonoBehaviour
     {

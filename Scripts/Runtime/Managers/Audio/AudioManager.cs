@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GoodMoodGames.Scripts.Runtime.Patterns.Singleton;
+using UnityEngine;
 
 namespace GoodMoodGames.Scripts.Runtime.Managers.Audio
 {

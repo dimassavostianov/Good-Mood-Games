@@ -19,16 +19,16 @@
     return !(USING_IPAD);
 }
 
-+ (void) vibrateDefault: {
++ (void) vibrateDefault {
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
-+ (void) vibratePeek: {
++ (void) vibratePeek {
     AudioServicesPlaySystemSound(1519);
 }
-+ (void) vibratePop: {
++ (void) vibratePop {
     AudioServicesPlaySystemSound(1520);
 }
-+ (void) vibrateWarning: {
++ (void) vibrateWarning {
     AudioServicesPlaySystemSound(1521);
 }
 

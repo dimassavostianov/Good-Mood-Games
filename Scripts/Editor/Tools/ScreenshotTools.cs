@@ -13,13 +13,13 @@ namespace GoodMoodGames.Scripts.Editor.Tools
         private const char Separator = '_';
 
         [MenuItem(
-            EditorToolsToolsConstants.ToolsRootDirectory + EditorToolsToolsConstants.ScreenshotToolsDirectory +
-            "Take Screenshot JPEG", false, EditorToolsToolsConstants.ScreenshotToolsPriority)]
+            EditorToolsConstants.ToolsRootDirectory + EditorToolsConstants.ScreenshotToolsDirectory +
+            "Take Screenshot JPEG", false, EditorToolsConstants.ScreenshotToolsPriority)]
         private static void TakeScreenshotJpeg() => CaptureScreenshot(".jpeg");
 
         [MenuItem(
-            EditorToolsToolsConstants.ToolsRootDirectory + EditorToolsToolsConstants.ScreenshotToolsDirectory + "Take Screenshot PNG",
-            false, EditorToolsToolsConstants.ScreenshotToolsPriority)]
+            EditorToolsConstants.ToolsRootDirectory + EditorToolsConstants.ScreenshotToolsDirectory + "Take Screenshot PNG",
+            false, EditorToolsConstants.ScreenshotToolsPriority)]
         private static void TakeScreenshotPng() => CaptureScreenshot(".png");
 
         private static void CaptureScreenshot(string extension)

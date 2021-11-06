@@ -1,6 +1,6 @@
 namespace GoodMoodGames.Scripts.Editor.Tools.Domain
 {
-    internal static class EditorToolsToolsConstants
+    internal static class EditorToolsConstants
     {
         public const string ToolsRootDirectory = "Game Tools/";
         

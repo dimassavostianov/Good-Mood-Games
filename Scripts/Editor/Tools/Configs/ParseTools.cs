@@ -1,15 +1,14 @@
 using GoodMoodGames.Scripts.Editor.Tools.Domain;
-using GoodMoodGames.Scripts.Runtime.Core.Configs;
 using GoodMoodGames.Scripts.Runtime.Core.GoogleServices;
 using UnityEditor;
 
-namespace GoodMoodGames.Scripts.Editor.Tools
+namespace GoodMoodGames.Scripts.Editor.Tools.Configs
 {
     internal static class ParseTools
     {
         [MenuItem(
-            EditorToolsToolsConstants.ToolsRootDirectory + EditorToolsToolsConstants.ParseToolsDirectory +
-            "Parse Configs", false, EditorToolsToolsConstants.ParseToolsPriority)]
+            EditorToolsConstants.ToolsRootDirectory + EditorToolsConstants.ParseToolsDirectory +
+            "Parse Configs", false, EditorToolsConstants.ParseToolsPriority)]
         private static void ParseConfigs()
         {
             var guids = AssetDatabase.FindAssets($"t:{typeof(GoogleSheetDescriptor)}");
@@ -19,7 +18,7 @@ namespace GoodMoodGames.Scripts.Editor.Tools
                 var descriptor = AssetDatabase.LoadAssetAtPath<GoogleSheetDescriptor>(assetPath);
                 if (descriptor == null) continue;
 
-                ConfigParserUtils.TryParseConfig(descriptor.ConfigName, descriptor.ConfigSpreadSheetId);
+                ConfigParser.TryParseConfig(descriptor.ConfigName, descriptor.ConfigSpreadSheetId);
             }
         }
     }

@@ -1,8 +1,8 @@
 {
     "name": "Unity.com.goodmoodgames.tools.Runtime",
     "references": [
-        "GUID:6055be8ebefd69e48b49212b09b47b2f",
-        "GUID:4307f53044263cf4b835bd812fc161a4"
+        "Unity.TextMeshPro",
+        "Cinemachine"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -9,8 +9,8 @@ namespace GoodMoodGames.Scripts.Editor.Tools
     internal static class ClearTools
     {
         [MenuItem(
-            EditorToolsToolsConstants.ToolsRootDirectory + EditorToolsToolsConstants.ClearToolsDirectory + "Clear Data",
-            false, EditorToolsToolsConstants.ClearToolsPriority)]
+            EditorToolsConstants.ToolsRootDirectory + EditorToolsConstants.ClearToolsDirectory + "Clear Data",
+            false, EditorToolsConstants.ClearToolsPriority)]
         private static void ClearData()
         {
             ClearScriptableSaveData();
@@ -20,8 +20,8 @@ namespace GoodMoodGames.Scripts.Editor.Tools
         }
 
         [MenuItem(
-            EditorToolsToolsConstants.ToolsRootDirectory + EditorToolsToolsConstants.ClearToolsDirectory +
-            "Clear Scriptable Save Data", false, EditorToolsToolsConstants.ClearToolsPriority + 100)]
+            EditorToolsConstants.ToolsRootDirectory + EditorToolsConstants.ClearToolsDirectory +
+            "Clear Scriptable Save Data", false, EditorToolsConstants.ClearToolsPriority + 100)]
         private static void ClearScriptableSaveData()
         {
             var guids = AssetDatabase.FindAssets($"t:{typeof(ScriptableSave)}");
@@ -39,8 +39,8 @@ namespace GoodMoodGames.Scripts.Editor.Tools
         }
 
         [MenuItem(
-            EditorToolsToolsConstants.ToolsRootDirectory + EditorToolsToolsConstants.ClearToolsDirectory +
-            "Clear Persistent Data", false, EditorToolsToolsConstants.ClearToolsPriority + 100)]
+            EditorToolsConstants.ToolsRootDirectory + EditorToolsConstants.ClearToolsDirectory +
+            "Clear Persistent Data", false, EditorToolsConstants.ClearToolsPriority + 100)]
         private static void ClearPersistentData()
         {
             if (!Directory.Exists(Application.persistentDataPath)) return;
@@ -49,8 +49,8 @@ namespace GoodMoodGames.Scripts.Editor.Tools
         }
 
         [MenuItem(
-            EditorToolsToolsConstants.ToolsRootDirectory + EditorToolsToolsConstants.ClearToolsDirectory +
-            "Clear Player Prefs", false, EditorToolsToolsConstants.ClearToolsPriority + 100)]
+            EditorToolsConstants.ToolsRootDirectory + EditorToolsConstants.ClearToolsDirectory +
+            "Clear Player Prefs", false, EditorToolsConstants.ClearToolsPriority + 100)]
         private static void ClearPlayerPrefs()
         {
             PlayerPrefs.DeleteAll();
@@ -58,8 +58,8 @@ namespace GoodMoodGames.Scripts.Editor.Tools
         }
 
         [MenuItem(
-            EditorToolsToolsConstants.ToolsRootDirectory + EditorToolsToolsConstants.ClearToolsDirectory +
-            "Clear Cache", false, EditorToolsToolsConstants.ClearToolsPriority + 100)]
+            EditorToolsConstants.ToolsRootDirectory + EditorToolsConstants.ClearToolsDirectory +
+            "Clear Cache", false, EditorToolsConstants.ClearToolsPriority + 100)]
         private static void ClearCache()
         {
             AssetBundle.UnloadAllAssetBundles(true);

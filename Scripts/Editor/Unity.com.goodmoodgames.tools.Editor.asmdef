@@ -1,6 +1,8 @@
 {
     "name": "Unity.com.goodmoodgames.tools.Editor",
-    "references": [],
+    "references": [
+        "GUID:a62cf59dc0f9247778a2b126b8d2b116"
+    ],
     "includePlatforms": [
         "Editor"
     ],

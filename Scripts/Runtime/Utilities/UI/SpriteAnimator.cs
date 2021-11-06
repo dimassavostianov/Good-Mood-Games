@@ -5,14 +5,14 @@ namespace GoodMoodGames.Scripts.Runtime.Utilities.UI
 {
     public class SpriteAnimator : MonoBehaviour
     {
-        [SerializeField] Sprite[] _frames;
+        [SerializeField] private Sprite[] _frames;
 
         [Space]
         [SerializeField] SpriteRenderer _animatedSprite;
-        [Tooltip("In seconds")] [SerializeField] float _animationLength = 1;
+        [Tooltip("In seconds")] [SerializeField] private float _animationLength = 1;
 
-        int _numberOfFrames;
-        float _framerate;
+        private int _numberOfFrames;
+        private float _framerate;
 
 
         private void Awake()
